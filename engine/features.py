@@ -75,7 +75,7 @@ def hotword():
         # Initialize Porcupine with your access key and keywords
         porcupine = pvporcupine.create(
             keywords=["jarvis", "alexa"],
-            access_key="JcH5CvPStN/1yg3vMzI8zgX1h436UoH/nhtKy8DCLGwf51HCFx3aBA=="  # Replace with your Picovoice access key
+            access_key="ACCESS_KEY"  # Replace with your Picovoice access key
         )
 
         # Callback function for processing audio stream

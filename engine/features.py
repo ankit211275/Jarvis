@@ -209,7 +209,7 @@ def aiProcess(command):
 
 # get_news
 def get_news():
-    r = requests.get(f"https://newsapi.org/v2/everything?q=technology&apiKey=2848ec50eb4341949931d9b084defe94")
+    r = requests.get(f"api_key")
 
     if r.status_code == 200:
         # Parse the JSON response

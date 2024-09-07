@@ -1,0 +1,14 @@
+# Ignore environment variable file
+/envjarvis
+
+# Ignore CSV file containing contacts
+contacts.csv
+
+# Ignore SQLite database file
+jarvis.db
+
+# Ignore specific JSON file in the engine directory
+/engine/cookies.json
+
+# Ignore the __pycache__ directory for Python bytecode (typo corrected)
+/engine/__pycache__/

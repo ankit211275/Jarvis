@@ -30,6 +30,11 @@ def playAssistantSound():
     music_dir = "www/assets/sound/mic_sound.mp3"
     playsound(music_dir)
 
+@eel.expose
+def playStartSound():
+    music_dir = "www/assets/sound/start_sound.mp3"
+
+
 # open app
 def opencommand (query):
     query = query.replace(ASSISTANT_NAME, "")
@@ -204,7 +209,7 @@ def aiProcess(command):
 
 # get_news
 def get_news():
-    r = requests.get(f"news api")
+    r = requests.get(f"https://newsapi.org/v2/everything?q=technology&apiKey=2848ec50eb4341949931d9b084defe94")
 
     if r.status_code == 200:
         # Parse the JSON response
